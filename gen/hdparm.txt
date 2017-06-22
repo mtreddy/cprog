@@ -1,0 +1,6 @@
+/dev/sdb:
+ HDIO_DRIVE_CMD(identify) failed: Invalid argument
+ readonly      =  0 (off)
+ readahead     = 256 (on)
+ geometry      = 1023/253/62, sectors = 16056320, start = 0
+

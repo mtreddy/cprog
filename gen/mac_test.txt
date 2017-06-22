@@ -1,0 +1,8 @@
+The test result is FAIL
+The test extra info:
+Register test  (offline)         0
+Eeprom test    (offline)         0
+Interrupt test (offline)         0
+Loopback test  (offline)         0
+Link test   (on/offline)         1
+

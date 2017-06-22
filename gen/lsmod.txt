@@ -1,0 +1,7 @@
+[diag@TOR1 ~]# lsmod
+Module                  Size  Used by
+pcie_monitor            8198  0 
+linux_kernel_bde       34676  1 linux_user_bde
+diag_fpga               8017  0 
+linux_user_bde         15653  0 
+

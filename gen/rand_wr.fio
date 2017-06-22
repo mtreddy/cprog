@@ -1,0 +1,7 @@
+; random read of 128mb of data
+[random-write]
+rw=randwrite
+size=128M
+;directory=/mnt_usb_bw
+directory=/mnt_usb_bwdirectory=/mnt_usb_bw
+directory=/mnt_usb_bw

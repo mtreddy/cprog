@@ -1,0 +1,4 @@
+[1:0:0:0]    cd/dvd  NECVMWar VMware IDE CDR10 1.00  /dev/sr0
+  dir: /sys/bus/scsi/devices/1:0:0:0  [/sys/devices/pci0000:00/0000:00:07.1/host1/target1:0:0/1:0:0:0]
+[2:0:0:0]    disk    VMware,  VMware Virtual S 1.0   /dev/sda
+  dir: /sys/bus/scsi/devices/2:0:0:0  [/sys/devices/pci0000:00/0000:00:10.0/host2/target2:0:0/2:0:0:0]

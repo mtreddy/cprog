@@ -1,0 +1,53 @@
+Comment,Format=CSV; Hex=CoderUpper; BreakOutBytes=False; IncludeBlockLength=True; HasAddress=False [DO NOT REMOVE THIS LINE IF YOU WANT TO IMPORT USING A FUSION TOOL],
+Comment,"SMBus Fields are Request,Address,Command,Data",
+Comment,"For reads, the last field is what is expected back from the device",
+Comment,Creator: Texas Instruments Fusion Digital Power Designer v1.8.230,
+Comment,"Date: Thursday, May 02, 2013",
+Comment,"Verifying DEVICE_CODE is ID: 0x009 (TPS53819), Revision: 0x0",
+ReadWord,0xFC,0x9000
+Comment,Write configuration to volatile memory,
+Comment,"Write ON_OFF_CONFIG Mode: CONTROL Pin Only; Control: Active High, Turn off Immediately",
+WriteByte,0x02,0x17
+Comment,"Write DELAY_CONTROL [MFR 01] PGD:1.024 ms [010b], POD:1.124 ms [010b]",
+WriteByte,0xD1,0x12
+Comment,"Write FREQUENCY_CONFIG [MFR 03] FS:425.000 kHz [010b], LF:60.000 us [11b], DCAP2:Enable [Trueb]",
+WriteByte,0xD3,0xB2
+Comment,Write MANUFACTURER_INFO [MFR 00] 00000000b,
+WriteByte,0xD0,0x00
+Comment,"Write MODE_SOFT_START_CONFIG [MFR 02] SST:1 ms [00b], HICLOFF:a [0b], CM:a [0b]",
+WriteByte,0xD2,0x00
+Comment,Write UVLO_THRESHOLD [MFR 06] VDDINUVLO:4.25V [101b],
+WriteByte,0xD6,0x05
+Comment,Write VOUT_ADJUSTMENT [MFR 04] VOA:0.00% [10000b],
+WriteByte,0xD4,0x10
+Comment,"Write VOUT_MARGIN [MFR 05] VOMH:5.70% [0110b], VOML:-5.20% [0101b]",
+WriteByte,0xD5,0x65
+Comment,Write WRITE_PROTECT 0,
+WriteByte,0x10,0x00
+Comment,Store configuration to non-volatile memory,
+Comment,Execute STORE_DEFAULT_ALL,
+SendByte,0x11,
+Pause,40,Pausing 40.00 ms for STORE_DEFAULT_ALL hold time
+Comment,Reset power to the device,
+Reset,,
+Pause,10,Wait 10.00 ms for device I2C interface to become available
+Comment,Validate configuration through read back,
+Comment,"Read ON_OFF_CONFIG Mode: CONTROL Pin Only; Control: Active High, Turn off Immediately",
+ReadByte,0x02,0x17
+Comment,"Read DELAY_CONTROL [MFR 01] PGD:1.024 ms [010b], POD:1.124 ms [010b]",
+ReadByte,0xD1,0x12
+Comment,"Read FREQUENCY_CONFIG [MFR 03] FS:425.000 kHz [010b], LF:60.000 us [11b], DCAP2:Enable [Trueb]",
+ReadByte,0xD3,0xB2
+Comment,Read MANUFACTURER_INFO [MFR 00] 00000000b,
+ReadByte,0xD0,0x00
+Comment,"Read MODE_SOFT_START_CONFIG [MFR 02] SST:1 ms [00b], HICLOFF:a [0b], CM:a [0b]",
+ReadByte,0xD2,0x00
+Comment,Read UVLO_THRESHOLD [MFR 06] VDDINUVLO:4.25V [101b],
+ReadByte,0xD6,0x05
+Comment,Read VOUT_ADJUSTMENT [MFR 04] VOA:0.00% [10000b],
+ReadByte,0xD4,0x10
+Comment,"Read VOUT_MARGIN [MFR 05] VOMH:5.70% [0110b], VOML:-5.20% [0101b]",
+ReadByte,0xD5,0x65
+Comment,Read WRITE_PROTECT 0,
+ReadByte,0x10,0x00
+Comment,Script end,

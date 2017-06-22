@@ -1,0 +1,1299 @@
+--00:00.0--
+--Host bridge--
+-- Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)--
+--00:01.0--
+--PCI bridge--
+-- Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)--
+--00:06.0--
+--PCI bridge--
+-- Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)--
+--00:1c.0--
+--PCI bridge--
+-- Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)--
+--00:1c.1--
+--PCI bridge--
+-- Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)--
+--00:1c.2--
+--PCI bridge--
+-- Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)--
+--00:1d.0--
+--USB controller--
+-- Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)--
+--00:1f.0--
+--ISA bridge--
+-- Intel Corporation DH89xxCC LPC Controller (rev 08)--
+--00:1f.2--
+--SATA controller--
+-- Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)--
+--00:1f.3--
+--SMBus--
+-- Intel Corporation DH89xxCC SMBus Controller (rev 08)--
+--00:1f.7--
+--System peripheral--
+-- Intel Corporation DH89xxCC Watchdog Timer (rev 08)--
+--01:00.0--
+--Co-processor--
+-- Intel Corporation Device 0434 (rev 21)--
+--01:00.1--
+--Ethernet controller--
+-- Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)--
+--01:00.2--
+--Ethernet controller--
+-- Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)--
+--02:00.0--
+--Ethernet controller--
+-- Broadcom Corporation Device b850 (rev 02)--
+--03:00.0--
+--Non-VGA unclassified device--
+-- Cisco Systems Inc Device 0107 (rev 01)--
+--03:00.0--
+Reading from file
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+dev.ser_num = 1
+dev.bus = 00:00.0
+dev.fun = Host bridge
+dev.name=  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09)
+dev.ser_num = 2
+dev.bus = 00:01.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+dev.ser_num = 3
+dev.bus = 00:06.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port (rev 09)
+dev.ser_num = 4
+dev.bus = 00:1c.0
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #1 (rev 08)
+dev.ser_num = 5
+dev.bus = 00:1c.1
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #2 (rev 08)
+dev.ser_num = 6
+dev.bus = 00:1c.2
+dev.fun = PCI bridge
+dev.name=  Intel Corporation DH89xxCC PCI Express Root Port #3 (rev 08)
+dev.ser_num = 7
+dev.bus = 00:1d.0
+dev.fun = USB controller
+dev.name=  Intel Corporation DH89xxCC USB2 Enhanced Host Controller #1 (rev 08)
+dev.ser_num = 8
+dev.bus = 00:1f.0
+dev.fun = ISA bridge
+dev.name=  Intel Corporation DH89xxCC LPC Controller (rev 08)
+dev.ser_num = 9
+dev.bus = 00:1f.2
+dev.fun = SATA controller
+dev.name=  Intel Corporation DH89xxCC 4 Port SATA AHCI Controller (rev 08)
+dev.ser_num = 10
+dev.bus = 00:1f.3
+dev.fun = SMBus
+dev.name=  Intel Corporation DH89xxCC SMBus Controller (rev 08)
+dev.ser_num = 11
+dev.bus = 00:1f.7
+dev.fun = System peripheral
+dev.name=  Intel Corporation DH89xxCC Watchdog Timer (rev 08)
+dev.ser_num = 12
+dev.bus = 01:00.0
+dev.fun = Co-processor
+dev.name=  Intel Corporation Device 0434 (rev 21)
+dev.ser_num = 13
+dev.bus = 01:00.1
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+dev.ser_num = 14
+dev.bus = 01:00.2
+dev.fun = Ethernet controller
+dev.name=  Intel Corporation DH8900CC Series Gigabit Network Connection (rev 21)
+dev.ser_num = 15
+dev.bus = 02:00.0
+dev.fun = Ethernet controller
+dev.name=  Broadcom Corporation Device b850 (rev 02)
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
+dev.ser_num = 16
+dev.bus = 03:00.0
+dev.fun = Non-VGA unclassified Cisco Systems Inc Device 0107 (rev 01)
+dev.name=  Cisco Systems Inc Device 0107 (rev 01)
