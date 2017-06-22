@@ -1,0 +1,8 @@
+Buble sort: Quick sort, odd even sor, comb sort, gnome sort, stooge sort, bogo sort
+Selection sort: Heapsort, smooth sort, cartesian tree sort , tournament sort, cycle sort
+Insertion sort: Shell sort, splay sort, tee sort, Library sort, patience sorting.
+Merge sorts: cascade merge sort, oscillating merge sort, polyphase merge sort
+Distribution sort: Amearican flag sort, bead sort, bucket sort, burst sort, counting sort, pigeon hole sort, proxmap sort, readix sort, flash sort
+Concurrent sorts: Bitonic sorter, Bitonic sorter Batcher odd–even mergesort Pairwise sorting network
+Hybrid sorts   : Block merge sort Timsort Introsort Spreadsort
+Other  :  Topological sorting Pancake sorting Spaghetti sort
