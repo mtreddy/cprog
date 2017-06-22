@@ -1,0 +1,5 @@
+gcc -g3 -c -fpic mutex_common.c usersem.c
+gcc -g3 -shared -o libmutexc.so mutex_common.o usersem.o
+gcc -g3 -L ./ -o mutex_test mutex_test.c -lmutexc -lrt
+gcc -g3 -L ./ -o mutex_test1 mutex_test1.c -lmutexc -lrt
+

@@ -1,0 +1,36 @@
+heloo="Printing\n"
+export LD_LIBRARY_PATH=${PWD}
+cc=gcc
+
+sem: sem_test sem_test1
+mutex: mutex_test mutex_test1
+
+sem_test: libsemt.so sem_test.o
+	cc -g3 sem_test.c -o sem_test -lsemt -L=./
+
+sem_test1: libsemt.so sem_test.o
+	cc -g3 sem_test1.c -o sem_test1 -lsemt -L=./
+
+libsemt.so: libsemtest.o
+	cc -g3 -shared sem_common.o -o libsemt.so
+
+libsemtest.o:
+	cc -g3 -c -fpic sem_common.c 
+
+mutex_test1 : libmutexc.so mutex_test1.o
+	cc -g3 mutex_test1.c -o mutex_test1 -lmutexc -lrt -L=./
+
+mutex_test : libmutexc.so mutex_test.o
+	cc -g3 mutex_test.c -o mutex_test -lmutexc -lrt -L=./
+
+libmutexc.so : libmutexc.o 
+	cc -g3 -shared mutex_common.o usersem.o -o libmutexc.so
+
+libmutexc.o : mutex_common.c usersem.c
+	cc -g3 -c -fpic mutex_common.c usersem.c
+
+	echo "<><><>Finished compilation ${PWD}<><><>" 
+
+clean:
+		rm mutex_test mutex_test1 sem_test sem_test1 *.so *.o
+
