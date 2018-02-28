@@ -1,0 +1,1 @@
+cmd_/home/mareddy/src/cprog/klm/hello-2.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/mareddy/src/cprog/klm/hello-2.ko /home/mareddy/src/cprog/klm/hello-2.o /home/mareddy/src/cprog/klm/hello-2.mod.o
