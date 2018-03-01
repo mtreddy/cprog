@@ -49,7 +49,7 @@ static int cdev_open(struct inode *inode, struct file *file){
     if(dev_open)
         return -EBUSY;
     dev_open++;
-    sprintf(msg, " called %d times hello world\n", counter);
+    sprintf(msg, " called %d times hello world\n", counter++);
     msg_ptr = msg;
     try_module_get(THIS_MODULE);
     return 0;
@@ -77,7 +77,7 @@ static ssize_t cdev_read(struct file *filep, char *buffer, size_t length, loff_t
 }
 static ssize_t cdev_write(struct file *filep, char *buffer, size_t length, loff_t *offset) {
     printk(KERN_INFO "Not implemented yet..\n");
-    return 0;
+    return -1;
 }
 
 module_init(cdev_init_moudle);
