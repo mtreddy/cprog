@@ -1,4 +1,5 @@
 obj-m += char1.o
+obj-m += char_mutex.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
