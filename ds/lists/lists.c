@@ -3,21 +3,6 @@
 #include<string.h>
 #include <malloc.h>
 #include "gen_llist.h"
-/*
- * Expected to pass list struct pointer and destroy func pointer
- */
-void list_init(list *lst, void (*destroy)(void *data)){
-    lst->head = NULL;
-    lst->tail = NULL;
-    lst->size = 0;
-    lst->destroy = destroy;
-    return;
-}
-void ele_destroy(void *data) 
-{
-    return;
-}
-#if 0
 int list_rem_next(list *lst, elem *ele, void **data) {
     elem *old_ele;
     /*If ele is NULL remove the first element*/
@@ -98,19 +83,4 @@ void list_print_char(list *lst)
         nxt = nxt->next;
     }
     return;
-}
-#endif
-int main(){
-
-    list lst;
-    char data[5][5] = {"Hello", "how", "are", "You", "today"};
-    list_init(&lst, &ele_destroy);
-    list_ins_next(&lst, NULL, (void *)data[0]);
-    list_ins_next(&lst, NULL, (void *)data[1]); 
-    list_ins_next(&lst, NULL, (void *)data[2]); 
-    list_ins_next(&lst, NULL, (void *)data[3]); 
-    list_ins_next(&lst, NULL, (void *)data[4]); 
-    list_print_char(&lst);
-    //list_rem_next(&lst, NULL, (void *)&data); 
-    
 }
