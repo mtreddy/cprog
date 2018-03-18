@@ -15,7 +15,7 @@ typedef struct list_s{
     elem *tail;
     int size;
     void (*destroy)(void *data);
-    int (*match)(const elem *key1, const elem *key2);
+    int (*match)(const void *key1, const void *key2);
 }list;
 #define list_head(list) list->head
 #define list_tail(list) list->tail
@@ -26,7 +26,7 @@ typedef struct list_s{
 #define list_is_tail(list, ele) ((list)->tail == (ele) ? 1 : 0)
 void list_init(list *lst, void (*destroy)(void *data));
 int list_rem_next(list *lst, elem *ele, void **data);
-int list_ins_next(list *lst, elem *ele, void *data);
+int list_ins_next(list *lst, elem *ele, const void *data);
 void list_destroy(list *lst);
-void list_destroy(list *lst);
+void list_print_char(list *lst);
 #endif

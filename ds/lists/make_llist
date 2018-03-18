@@ -1,8 +1,12 @@
 CC = gcc
 
 #all: list lists queues stacks
-all:  glists queues stacks
+all:  glists queues stacks sets
 
+sets :	gen_sets.o lists.o
+	$(CC) -o get_sets gen_sets.o lists.o
+gen_sets.o	:	gen_sets.c
+	$(CC) -c gen_sets.c
 
 stacks: gen_stacks.o lists.o
 	$(CC) -o gen_stacks gen_stacks.o  lists.o
@@ -23,4 +27,4 @@ lists.o :   lists.c gen_llist.h
 	$(CC) -c lists.c
 
 clean:
-	rm gen_llist.o gen_queues.o gen_stacks.o lists.o
+	rm gen_llist.o gen_queues.o gen_stacks.o lists.o gen_sets.o

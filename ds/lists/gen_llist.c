@@ -6,13 +6,6 @@
 /*
  * Expected to pass list struct pointer and destroy func pointer
  */
-void list_init(list *lst, void (*destroy)(void *data)){
-    lst->head = NULL;
-    lst->tail = NULL;
-    lst->size = 0;
-    lst->destroy = destroy;
-    return;
-}
 void ele_destroy(void *data) 
 {
     return;

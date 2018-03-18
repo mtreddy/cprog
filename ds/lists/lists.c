@@ -3,6 +3,13 @@
 #include<string.h>
 #include <malloc.h>
 #include "gen_llist.h"
+void list_init(list *lst, void (*destroy)(void *data)){
+    lst->head = NULL;
+    lst->tail = NULL;
+    lst->size = 0;
+    lst->destroy = destroy;
+    return;
+}
 int list_rem_next(list *lst, elem *ele, void **data) {
     elem *old_ele;
     /*If ele is NULL remove the first element*/
@@ -38,7 +45,7 @@ int list_rem_next(list *lst, elem *ele, void **data) {
  * if ele is NULL then we remove first element in the list.
  * if not NULL then we search for the match element and delete it.
  */
-int list_ins_next(list *lst, elem *ele, void *data)
+int list_ins_next(list *lst, elem *ele, const  void *data)
 {
     elem *newele = NULL;
     if((newele = (elem *) malloc(sizeof(ele))) == NULL)
