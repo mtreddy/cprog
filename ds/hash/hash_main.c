@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "hash.h"
+#include "hash_inc.h"
 
 
 uint32  hashpjw(const void *key)
@@ -10,7 +10,7 @@ uint32  hashpjw(const void *key)
     while(*ptr != '\0'){
         uint32 tmp = 0;
         val = (val << 4) + (*ptr);
-        if (tmp = (val & 0xf0000000)){
+        if((tmp = val & 0xf0000000)){
             val = val ^(tmp >> 24);
             val = val ^ tmp;
         }
