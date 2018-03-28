@@ -1,0 +1,13 @@
+CC = gcc
+
+#all: list lists queues stacks
+all:  hash
+
+hash: hash_main.o 
+	$(CC) -o hash hash_main.o
+
+hash_main.o :   hash.h
+	$(CC) -c -g3 hash_main.c
+
+clean:
+	rm hash hash_main.o 
