@@ -10,100 +10,59 @@ void ele_destroy(void *data)
 {
     return;
 }
-#if 0
-int list_rem_next(list *lst, elem *ele, void **data) {
-    elem *old_ele;
-    /*If ele is NULL remove the first element*/
-    if(ele == NULL) {
-        if(list_size(lst) == 0)
-            return -1;
-        old_ele = lst->head;
-        *data = old_ele->data;
-        lst->head = ele->next->next;
-        old_ele->next = NULL;
-        if(list_size(lst) == 1)
-            lst->tail = NULL;
-    } else {
-        /*If this is tail*/
-        if(ele->next == NULL)
-            return -1;
-        /* ele is int he middle of lst*/
-        *data = ele->next->data;
-        old_ele = ele->next;
-        ele->next = ele->next->next;
-        old_ele->next = NULL;
-        /* if ele->next is tail */
-        if(ele->next == NULL)
-            lst->tail = ele;
-    }
-    lst->size--;
-    free(old_ele);
-    /* If ele is not NULL then find next ele which is not NULL to delete*/
-}
-/*
- * List struct pointer
- * ele which need to be removed.
- * if ele is NULL then we remove first element in the list.
- * if not NULL then we search for the match element and delete it.
- */
-int list_ins_next(list *lst, elem *ele, void *data)
+void list_string_test(list *lst)
 {
-    elem *newele = NULL;
-    if((newele = (elem *) malloc(sizeof(ele))) == NULL)
-        return -1;
-    /*iF element is NULL then just added at the head*/
-   if(ele == NULL) {
-       if(list_size(lst) == 0)
-           lst->tail = newele;
-       newele->next = lst->head;
-       newele->data = (void *)data;
-      lst->head =  newele;
-   } else {
-       /*Otherwise add to element->next*/
-       /*Element is tail*/
-       if(ele->next == NULL) {
-           lst->tail = newele;
-       }
-       newele = (void *)data;
-       newele->next = ele->next;
-       ele->next = newele;
-   }
-   lst->size++;
-   return 0;
+    char data[5][5] = {"Hello", "how", "are", "You", "today"};
+    list_ins_next(lst, NULL, (void *)data[0]);
+    list_ins_next(lst, NULL, (void *)data[1]); 
+    list_ins_next(lst, NULL, (void *)data[2]); 
+    list_ins_next(lst, NULL, (void *)data[3]); 
+    list_ins_next(lst, NULL, (void *)data[4]); 
+    list_print_char(lst);
+    //list_rem_next(&lst, NULL, (void *)&data); 
+    
+    lst->head = list_reverse(lst);
+    list_print_char(lst);
 
 }
-void list_destroy(list *lst)
+
+void list_merge_test(lst) 
 {
-    void *data;
-    while(list_size(lst) > 0) {
-        if(list_rem_next(lst, NULL, (void **)&data) && lst->destroy != NULL)
-            lst->destroy(data);
-    }
-    memset(lst, 0, sizeof(list));
     return;
 }
-void list_print_char(list *lst)
-{
-    elem *nxt = NULL;
-    nxt = lst->head;
-    while(nxt != NULL) {
-        printf("%s\n", (char *)nxt->data);
-        nxt = nxt->next;
-    }
-    return;
+int rec_remove(elem *ele, int n){
+    static int count = 0;
+    
+    if(ele == NULL)
+        return ;
+    /*get len*/
+
+    /* find pos*/
+    count++;
 }
-#endif
+get_data_of_nth_node_from_tail(list *lst, int n){
+    printf("data=%d at pos=%d\n",rec_remove(lst->head, n), n);
+}
+
 int main(){
 
     list lst;
-    char data[5][5] = {"Hello", "how", "are", "You", "today"};
     list_init(&lst, &ele_destroy);
-    list_ins_next(&lst, NULL, (void *)data[0]);
-    list_ins_next(&lst, NULL, (void *)data[1]); 
-    list_ins_next(&lst, NULL, (void *)data[2]); 
-    list_ins_next(&lst, NULL, (void *)data[3]); 
-    list_ins_next(&lst, NULL, (void *)data[4]); 
-    list_print_char(&lst);
-    //list_rem_next(&lst, NULL, (void *)&data); 
-    
+    if(0)
+        list_string_test(&lst);
+    if(0)
+        list_merge_test(&lst);
+    lst.head = (elem *)malloc(sizeof(elem));
+    lst.head->data = 1;
+    lst.head->next = (elem *)malloc(sizeof(elem));
+    lst.head->next->data = 2;
+    lst.head->next->next = (elem *)malloc(sizeof(elem));
+    lst.head->next->next->data = 3;
+    lst.head->next->next->next = (elem *)malloc(sizeof(elem));
+    lst.head->next->next->next->data = 4;
+    lst.head->next->next->next->next = (elem *)malloc(sizeof(elem));
+    lst.head->next->next->next->next->data = 5;
+    lst.head->next->next->next->next->next = (elem *)malloc(sizeof(elem));
+    lst.head->next->next->next->next->next->data = 6;
+    list_remove_nth_node_from_tail(&lst, 1);
 }

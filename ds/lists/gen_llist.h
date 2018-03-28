@@ -29,4 +29,5 @@ int list_rem_next(list *lst, elem *ele, void **data);
 int list_ins_next(list *lst, elem *ele, const void *data);
 void list_destroy(list *lst);
 void list_print_char(list *lst);
+elem *list_reverse(list *lst);
 #endif

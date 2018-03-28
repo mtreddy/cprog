@@ -91,3 +91,17 @@ void list_print_char(list *lst)
     }
     return;
 }
+
+elem *list_reverse(list *lst){
+    elem *prev=NULL;
+    elem *curr=NULL;
+    elem *next=NULL;
+    curr=lst->head;
+    while(curr != NULL){
+        next = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = next;
+    }
+    return prev;
+}
