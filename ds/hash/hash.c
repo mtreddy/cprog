@@ -1,18 +1,18 @@
 #include "hash_inc.h"
-void list_destroy(void **data){
-    free(data);
-}
-void chtbl_destroy(void **data) {
+//void list_destroy(list *lst){
+//    return;
+//}
+void chtbl_destroy(CHTbl *chtbl, void **data) {
     /* Free each bucket*/
     for(int i = 0; i < chtbl->buckets; i++){
-        list_free(&chtbl->table[i]);
+        list_destroy(&chtbl->table[i]);
     }
     free(chtbl->table);
 }
-int chtbl_init(CHTbl *chtbl, int buckets, void (* h)(void * key), int (*match)(void *key1, void *key2), void(*destroy)(void **data))
+int chtbl_init(CHTbl *chtbl, int buckets, int (* h)(void * key), int (*match)(void *key1, void *key2), void(*destroy)(void **data))
 {
     /*Allocate space for table*/
-    if((chtbl->table = malloc(sizeof(List) * bucckets)) == NULL)
+    if((chtbl->table = malloc(sizeof(list) * buckets)) == NULL)
             return -1;
     /*Encapsulate functions*/
     chtbl->match = match;
@@ -21,7 +21,10 @@ int chtbl_init(CHTbl *chtbl, int buckets, void (* h)(void * key), int (*match)(v
     chtbl->size = 0;
     return 0;
 }
+int chtbl_lookup(CHTbl *chtbl, void *data)
+{
 
+}
 int chtbl_insert(CHTbl *chtbl, void **data)
 {
     int bucket, retval;
