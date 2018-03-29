@@ -1,22 +1,13 @@
-DEBUG_ON	= -g3 -D DEBUG
-DEBUG_OFF	= -O2
-BASE		= -W
+CC = gcc
 
-LIBFILES = # here test.o kind files added
-
-CC			= g++
-CFLAGS		= $(BASE)	$(DEBUG_ON)
-LIBS		=
-LDFLAGS		=
-AR			= ar
-
-PROGS		= btree
+#all: list lists queues stacks
 all: btree
 
-btree: btree.cpp
-	${CC} ${CFLAGS} -o $@ btree.cpp ${LIBS}
+btree:  ../lists/lists.o btree_build.o  btree_common.o
+	$(CC) -o btree btree_build.o btree_common.o ../lists/lists.o
+
+gen_llist.o : btree_build.c btree_common.c ../lists/lists.c btree_inc.h
+	$(CC) -c -g3 btree_build.c btree_common.c  ../lists/lists.c
 
 clean:
-	rm -f *.o ${PROGS}
-		
-
+	rm build_btree.o btree_common.o 
