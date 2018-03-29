@@ -21,9 +21,21 @@ int chtbl_init(CHTbl *chtbl, int buckets, int (* h)(void * key), int (*match)(vo
     chtbl->size = 0;
     return 0;
 }
-int chtbl_lookup(CHTbl *chtbl, void *data)
+int chtbl_lookup(CHTbl *chtbl, void **data)
 {
+    int bucket;
+    elem *ele;
+    /* Hash the key*/
+    bucket = (chtbl->h(*data)) % chtbl->buckets;
+    /*Search for the data in bucket*/
+    for(ele=list_head(&chtbl->table[bucket]); ele != NULL; ele=list_next(ele)){
+        if(chtbl->match(data, list_data(ele))) {
+            *data = list_data(ele);
+            return 0;
+        }
+    }
 
+    return -1;
 }
 int chtbl_insert(CHTbl *chtbl, void **data)
 {
@@ -40,12 +52,26 @@ int chtbl_insert(CHTbl *chtbl, void **data)
         chtbl->size++;
     }
 
-    
 }
-
-void chtbl_remove(CHTbl *chtbl, void **data)
+int chtbl_remove(CHTbl *chtbl, void **data)
 {
-    elem *curr=NULL, *next=NULL;
+    elem *curr=NULL, *prev=NULL;
     int bucket;
+    void *temp;
+    temp = (void *)data;
+    /* has the key*/
+    bucket = chtbl->h(*data) % chtbl->buckets;
+    /*search for the element*/
+    for(curr=list_head(&(chtbl->table[bucket])); curr != NULL; curr=list_next(curr)){
+        if(chtbl->match(data, list_data(curr))) {
+            if(list_rem_next(&chtbl->table[bucket], prev, data)){
+                chtbl->size--;
+                return 0;
+            } else {
+                return -1;
+            }
+        }
+       prev = curr; 
+    }
 }
 

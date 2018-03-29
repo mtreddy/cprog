@@ -17,9 +17,9 @@ typedef struct list_s{
     void (*destroy)(void *data);
     int (*match)(const void *key1, const void *key2);
 }list;
-#define list_head(list) list->head
-#define list_tail(list) list->tail
-#define list_size(list) list->size
+#define list_head(list) (list)->head
+#define list_tail(list) (list)->tail
+#define list_size(list) (list)->size
 #define list_next(ele) ele->next
 #define list_data(ele) ele->data
 #define list_is_head(list, ele) ((list)->head == (ele) ? 1 : 0)
