@@ -15,6 +15,11 @@ void rotate(int A[], int len, int d){
     }
 
 }
+
+/*
+ */
+void rotate_method_2(int A[], int len, int n){
+}
 int main(){
     print_array(A, A_LEN);
    rotate(A, A_LEN, 1); 
