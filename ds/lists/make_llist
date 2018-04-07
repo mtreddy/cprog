@@ -23,6 +23,12 @@ glists : gen_llist.o lists.o
 gen_llist.o : gen_llist.c gen_llist.h
 	$(CC) -c -g3 gen_llist.c
 
+glists : double_llist.o
+	$(CC) -o dlists double_llist.o
+
+double_llist.o : double_llist.c
+	$(CC) -c -g3 double_llist.c
+
 lists.o :   lists.c gen_llist.h
 	$(CC) -c -g3 lists.c
 

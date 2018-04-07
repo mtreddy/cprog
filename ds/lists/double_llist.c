@@ -1,22 +1,21 @@
 #include<stdio.h>
+#include<malloc.h>
 
-typedf struct lele_s{
-    struct lele_t *next;
-    (void *) data;
-}lele_t
+typedef struct lele_s{
+    struct lele_s *next;
+    struct lele_s *prev;
+    void * data;
+}elem;
 
-typdef struct list_s {
-    lele_t *head;
-    lele_t *tail;
-    int (* destroy) (voit *data);
+typedef struct list_s {
+    elem *head;
+    elem *tail;
+    int (* destroy) (void *data);
     int (* match) (void *key1, void *key2);
-}list_t;
-i
-list_t list;
-
-lele_t * list_find_ele(lele_t *ele, list_t *list)
+}list;
+elem * list_find_ele(elem *ele, list *list)
 {
-    lele_t *tmp;
+    elem *tmp;
     /*Check if ele is not NULL*/
     tmp = list->head;
 
@@ -44,15 +43,15 @@ lele_t * list_find_ele(lele_t *ele, list_t *list)
  * 5. ele is at the end
  *
  */
-int remove_ele(lele_t *ele, list_t *list)
+void remove_ele(elem *ele, list *list)
 {
-    lele_t *tmp=NULL, *prev=NULL;
+    elem *tmp=NULL, *prev=NULL;
     /*1 */
     if(list->head == NULL)
-        return -1;
+        return ;
     /*2 */
     if(ele == NULL)
-        return -1;
+        return ;
     /*3*/
     tmp = list->head;
     if(tmp == ele) {
@@ -81,15 +80,15 @@ int remove_ele(lele_t *ele, list_t *list)
  * 2. middle ele need to be added
  * 3. last to be added
  */
-void add_ele(void* data, list_t *list)
+void add_ele(void* data, list *list)
 {
-    lele_t *tmp = NULL, *prev = NULL;
+    elem *tmp = NULL, *prev = NULL;
     /* 1 */
     if(list->head == NULL) {
-        ele = (lele_t *) mallco(sizeof(lele_t));
-        ele->next = NULL;
-        ele->prev = NULL;
-        else->data = (int *)data;
+        tmp = (elem*)malloc(sizeof(elem));
+        tmp->next = NULL;
+        tmp->prev = NULL;
+        tmp->data = (int *)data;
     }
 
     /* 2 */
@@ -102,22 +101,47 @@ void add_ele(void* data, list_t *list)
 
     }
 
-    tmp->next = (lele_t *)malloc(sizeof(lele_t));
+    tmp->next = (elem *)malloc(sizeof(elem));
     tmp->next->next = NULL;
     tmp->prev = prev;
     return;
 }
-int list_init(int (* fn)(lele_t *ele, list_t *list))
+void list_init(list *lst, int (*destroy)(void *data))
 {
-    list->head = NULL;
-    list->tail = NULL;
+    lst->head = NULL;
+    lst->tail = NULL;
+    lst->destroy = destroy;
+}
+elem * dliest_reverse(elem *head)
+{
+    elem *prev=NULL, *curr=NULL, *next=NULL;
+    if(head == NULL)
+        return NULL;
+    curr = head;
+    while(curr){
+        prev = curr->prev;
+        next = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = next;
+        if(curr == NULL)
+            break;
+    }
+    head = prev;
+    return head;
+}
+int destroy(void *data)
+{
+    /*need to implement*/
+    return 0;
 }
 int main()
 {
     /*
      *  Root
      */
-
+    list lst;
+    list_init(&lst, destroy);
     /*
      * Add a member
      */
@@ -133,4 +157,5 @@ int main()
     /*
      * Delete
      */
+    return 0;
 }
