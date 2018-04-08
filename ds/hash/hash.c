@@ -9,7 +9,7 @@ void chtbl_destroy(CHTbl *chtbl, void **data) {
     }
     free(chtbl->table);
 }
-int chtbl_init(CHTbl *chtbl, int buckets, int (* h)(void * key), int (*match)(void *key1, void *key2), void(*destroy)(void **data))
+int chtbl_init(CHTbl *chtbl, int buckets, int (* h)(void * key), int (*match)(void *key1, void *key2), void(*destroy)(CHTbl *chtbl, void **data))
 {
     /*Allocate space for table*/
     if((chtbl->table = malloc(sizeof(list) * buckets)) == NULL)
