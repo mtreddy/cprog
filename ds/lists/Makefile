@@ -19,7 +19,7 @@ gen_queues.o : gen_queues.c
 	$(CC) -c -g3 gen_queues.c
 
 glists : gen_llist.o lists.o
-	$(CC) -o gen_llist gen_llist.o lists.o
+	$(CC) -o glists gen_llist.o lists.o
 
 gen_llist.o : gen_llist.c gen_llist.h
 	$(CC) -c -g3 gen_llist.c

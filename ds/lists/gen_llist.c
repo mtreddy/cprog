@@ -26,7 +26,7 @@ void list_string_test(list *lst)
 
 }
 
-void list_merge_test(lst) 
+void list_merge_test(list *lst) 
 {
     return;
 }
@@ -34,13 +34,13 @@ int rec_remove(elem *ele, int n){
     static int count = 0;
     
     if(ele == NULL)
-        return ;
+        return  0;
     /*get len*/
 
     /* find pos*/
     count++;
 }
-get_data_of_nth_node_from_tail(list *lst, int n){
+int list_remove_nth_node_from_tail(list *lst, int n){
     printf("data=%d at pos=%d\n",rec_remove(lst->head, n), n);
 }
 
@@ -53,16 +53,16 @@ int main(){
     if(0)
         list_merge_test(&lst);
     lst.head = (elem *)malloc(sizeof(elem));
-    lst.head->data = 1;
+    lst.head->data = (void *)1;
     lst.head->next = (elem *)malloc(sizeof(elem));
-    lst.head->next->data = 2;
+    lst.head->next->data = (void*)2;
     lst.head->next->next = (elem *)malloc(sizeof(elem));
-    lst.head->next->next->data = 3;
+    lst.head->next->next->data = (void*)3;
     lst.head->next->next->next = (elem *)malloc(sizeof(elem));
-    lst.head->next->next->next->data = 4;
+    lst.head->next->next->next->data = (void*)4;
     lst.head->next->next->next->next = (elem *)malloc(sizeof(elem));
-    lst.head->next->next->next->next->data = 5;
+    lst.head->next->next->next->next->data = (void*)5;
     lst.head->next->next->next->next->next = (elem *)malloc(sizeof(elem));
-    lst.head->next->next->next->next->next->data = 6;
+    lst.head->next->next->next->next->next->data = (void*)6;
     list_remove_nth_node_from_tail(&lst, 1);
 }

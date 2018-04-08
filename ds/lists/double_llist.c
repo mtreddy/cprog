@@ -112,6 +112,51 @@ void list_init(list *lst, int (*destroy)(void *data))
     lst->tail = NULL;
     lst->destroy = destroy;
 }
+elem* dlist_SortedInsert(elem *head,int data)
+{
+    // Complete this function
+   // Do not write the main method. 
+    // cout << "data= " << data << endl;
+    elem *tmp=NULL, *curr=NULL, *prev=NULL, *next=NULL;
+    tmp = (elem *)malloc(sizeof(elem));
+    tmp->next = NULL;
+    tmp->prev = NULL;
+    tmp->data = (void *)data;
+    if(head == NULL){
+        head = tmp;
+        //cout << "data= " << data << endl;
+        return head;
+    }
+    curr = head;
+    while(curr){
+        //cout << "data= " << data << endl;
+        next = curr->next;
+        if(curr->data >= (void *)data){
+             if(prev == NULL){/*Inserting at head*/
+                tmp->next = curr;
+                curr->prev = tmp;
+                head = tmp;
+                return head;
+            } else{
+                prev->next = tmp;
+                tmp->next = curr;
+                tmp->prev = prev;
+                curr->prev = tmp;
+                return head;
+            }
+        }        
+        prev = curr;
+        curr = next;
+    }
+    prev->next = tmp;
+    tmp->prev = prev;
+ //   tmp=head;
+ //   while(tmp){
+ //       cout << tmp->data << " " ;
+ //       tmp=tmp->next;
+ //   }
+    return head;
+}   
 elem * dliest_reverse(elem *head)
 {
     elem *prev=NULL, *curr=NULL, *next=NULL;
