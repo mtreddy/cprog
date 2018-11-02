@@ -26,11 +26,13 @@
  */ 
 #include<stdio.h>
 #include "../sort_common.h"
-#include "qdata.h"
+//#include "qdata.h"
 
 #define DATASIZE 25
 //int data[25] = {25,22,23,21,19,24,18,20,17,14,16,13,15,12,10,11,9,7,8,6,4,5,3,1,2};
+int data[] = {3,2,1,4,5};
 int g_comp = 0;
+
 /*
  * Loumuto partition scheme
  * Algorithm maintains the index to put the pivot in variable i and each time it finds an element 
@@ -41,7 +43,7 @@ int lomuto_partition(int *array, int lo, int hi)
 {
     int pivot = 0;
     int i = 0, j = 0;
-        g_comp += (hi - lo);
+        //g_comp += (hi - lo);
     pivot = array[hi];
     i = lo;
     for( j = lo; j <= hi-1; j++) {
@@ -50,6 +52,7 @@ int lomuto_partition(int *array, int lo, int hi)
             //printf("Inside swap array[%d]=%d array[%d]=%d\n", j, array[j], i, array[i]);
             i= i + 1;
         }
+	g_comp += 1;
     }
     swap(&array[i], &array[hi]);
     //printf("Outside swap array[%d]=%d array[%d]=%d\n", j, array[j], i, array[i]);
@@ -173,6 +176,7 @@ int hoare_partition(int *array, int lo, int hi)
             return j;
         }
         swap(&array[i], &array[j]);
+	g_comp += 1;
         //printf("outside swap array[%d]=%d array[%d]=%d\n", j, array[j], i, array[i]);
     }
 }
@@ -194,8 +198,8 @@ int main(void)
 {
     //show_data(sizeof(data)/(sizeof(int)), data);
     //quick_sort(data, 0, sizeof(data)/(sizeof(int)) - 1);
-    //quick_sort1(data, 0, sizeof(data)/(sizeof(int)) - 1);
-    quick_sort(data, 0, 99);
+    quick_sort1(data, 0, sizeof(data)/(sizeof(int)) - 1);
+    //quick_sort(data, 0, 99);
     //show_data(10, data);
     printf("No of comparisions %d \n", g_comp);
     //show_data(sizeof(data)/(sizeof(int)), data);
