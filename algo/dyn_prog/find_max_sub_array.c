@@ -29,7 +29,7 @@ void find_max_cross_sub_array(int arr[], int l, int m, int h, int *low, int *hi,
 	*low = lmax;
 	*hi = rmax;
 	*tsum = lsum + rsum; 
-//printf("\ncross low=%d hi=%d sum=%d\n", *low, *hi, *tsum);
+	printf("\ncross low=%d hi=%d sum=%d\n", *low, *hi, *tsum);
 }
 
 void find_max_sub_array(int arr[], int l, int h, int *low, int *hi, int *sum) 
