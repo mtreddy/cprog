@@ -10,7 +10,7 @@ LIBS		=
 LDFLAGS		=
 AR			= ar
 
-PROGS		= spath1 cut_rod
+PROGS		= spath1 cut_rod knapscak
 all: spath1 cut_rod
 
 spath1: spath1.cpp
@@ -18,6 +18,10 @@ spath1: spath1.cpp
 
 cut_rod: cut_rod.c
 	${CC} ${CFLAGS} -o $@ cut_rod.c ${LIBS}
+
+Cut_rod: knapscak.c
+	${CC} ${CFLAGS} -o $@ knapscak.c ${LIBS}
+
 
 clean:
 	rm -f *.o ${PROGS}
