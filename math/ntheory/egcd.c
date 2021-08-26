@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 /*
  * FInding inverse modulof a gcd(n,m) == 1
@@ -33,9 +35,16 @@ int egcd(int n, int m)
     return p2; 
 } 
 
-int main()
+int main(int argc, char **argv)
 {
    int m = 101;//15;//4620;
    int a = 4620; //26;//101;
+   if(argc < 2 ) {
+	   printf("You did not pass the arguments. We will pick random number\n");
+	   printf(" if you want custm args : ./egcd <int-number>\n");
+	   //srand(time(0));
+	   a = rand();
+   }
+   printf("a valis %d and modulus is %d\n", a, m);
    printf("inv=%d\n", egcd(a,m));
 }
