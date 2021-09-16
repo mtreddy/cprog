@@ -24,4 +24,4 @@ ssl_client:
 ssl_server:
 	$(CC)  $(CFLAGS) ssl_server.c -o ssl_server $(LD_FLAGS) $(LDLIBS)
 clean:
-	rm large_num_ops ec_point_multi
+	rm large_num_ops ec_point_multi bn_nnmod_test ssl_client ssl_server

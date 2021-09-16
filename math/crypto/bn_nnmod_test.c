@@ -15,9 +15,17 @@ void init_ssl() {
 int main(int argc, char** argv) {
     BIGNUM *a = NULL, *b = NULL, *m = NULL, *mod_mul = NULL, *ret = NULL;
     BIGNUM *a_tmp = BN_new();
-    char *order = "3ffffffffffffffffffffffffffffffffffef90399660fc938a90165b042a7cefadb307";
-    char *inp = "77CB284AC41E72EDA2A93EB8D6DFF58620F6C69D528DFE90D909AA5CABC03A34E5D5A76";
+    char *order; // char *order = "3ffffffffffffffffffffffffffffffffffef90399660fc938a90165b042a7cefadb307";
+    char *inp; // char *inp = "77CB284AC41E72EDA2A93EB8D6DFF58620F6C69D528DFE90D909AA5CABC03A34E5D5A76";
     char *out;
+    if(argc >= 3 ) {
+	    order = argv[1];
+	    inp = argv[2];
+    } else {
+	printf("Help:bn_nnmod_test <order> <inp>\n");
+	printf("./bn_nnmod_test  \"3ffffffffffffffffffffffffffffffffffef90399660fc938a90165b042a7cefadb307\" \"77CB284AC41E72EDA2A93EB8D6DFF58620F6C69D528DFE90D909AA5CABC03A34E5D5A76\" \n");
+	return -1;
+    }
     BN_hex2bn(&m, order);
     BN_hex2bn(&a, inp);
     int st = 0;
