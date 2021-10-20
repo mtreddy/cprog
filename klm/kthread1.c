@@ -3,9 +3,9 @@
 *
 *  \details    Simple Linux device driver (Kernel Thread)
 *
-*  \author     EmbeTronicX
+*  \author     Tirumala Marri based on Embedtronix
 *
-*  \Tested with Linux raspberrypi 5.10.27-v7l-embetronicx-custom+
+*  \Tested with Linux raspberrypi 5.10.17-v7+
 *
 *******************************************************************************/
 #include <linux/kernel.h>
