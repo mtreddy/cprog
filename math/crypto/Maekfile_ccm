@@ -1,0 +1,27 @@
+#!/bin/sh
+
+
+CC=gcc
+LD=ld
+LIBS = -L/usr/lib
+
+CFLGAGS = -g3
+
+
+all: ccm ccm_enc ccm_dec 
+
+
+%.o: %.c 
+	$(CC) $(CFLAGS) -c $<  
+
+ccm: aes_128_ccm.o
+	$(CC)  aes_128_ccm.o -o ccm -lssl -lcrypto $(LIBS)
+ccm_enc: aes_128_ccm_enc.o
+	$(CC) aes_128_ccm_enc.o -o ccm_enc -lssl -lcrypto $(LIBS)
+
+ccm_dec: aes_128_ccm_dec.o
+	$(CC) aes_128_ccm_dec.o -o ccm_dec -lssl -lcrypto $(LIBS)
+
+
+clean:
+	rm ccm ccm_enc ccm_dec *.o
