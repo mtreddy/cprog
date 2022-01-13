@@ -15,7 +15,8 @@ int main(int argc, char **argv) {
     key = "5a33980e71e7d67fd6cf171454dc96e5";
     aad = "eca622a37570df619e10ebb18bebadb2f2b49c4d2b2ff715873bb672e30fc0ff";
     nonce = "33ae68ebb8010c6b3da6b9cb29";
-    pt = "a34dfa24847c365291ce1b54bcf8d9a75d861e5133cc3a74";
+    //pt = "a34dfa24847c365291ce1b54bcf8d9a75d861e5133cc3a74";
+    pt = "aa34dfa24847c365291ce1b54bcf8d9a75d861e5133cc334dfa24847c365291ce1b54bcf8d9a75d861e5133cc3";
     Tlen = 16;
 	if(argc > 1) {
 		key =  argv[1];
@@ -45,7 +46,9 @@ int main(int argc, char **argv) {
     str2hex(pt, ptt, Plen);
     str2hex(aad, aadd, Alen);
     str2hex(nonce, noncee, Nlen);
-
+    printf("\nHex plain text: ");
+    printBytes(pt, Plen);
+    
     EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
     EVP_CIPHER_CTX_init(ctx);
     EVP_EncryptInit(ctx, EVP_aes_128_ccm(), 0, 0);
