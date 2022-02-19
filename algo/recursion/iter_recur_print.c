@@ -13,12 +13,10 @@ void print_series(int n1, int n2)
 
 void print_recur_series(int n1, int n2)
 {
-    if(n1 == n2) {
-        printf("%d\n",n2);
-    } else {
-        printf("%d\n",n1);
+    if(n1 <  n2) {
         print_recur_series(n1+1,n2);
     }
+        printf("R:%d\n",n1);
 }
 
 int main(void)
