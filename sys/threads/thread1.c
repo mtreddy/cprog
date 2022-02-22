@@ -20,13 +20,13 @@ int main()
     int iter1, iter2;
 
     iter1 = pthread_create(&thread1, NULL, print_func_1, (void *)msg1);
-    if(iter1) {
+    if(0) {
         fprintf(stderr, " Error: pthread_create() retuern code %d\n", iter1);
         exit(EXIT_FAILURE);
     }
     sleep(2);
-    iter1 = pthread_create(&thread1, NULL, print_func_1, (void *)msg2);
-    if(iter2) {
+    iter2 = pthread_create(&thread2, NULL, print_func_1, (void *)msg2);
+    if(0) {
         fprintf(stderr, " Error: pthread_create() retuern code %d\n", iter2);
         exit(EXIT_FAILURE);
     }
