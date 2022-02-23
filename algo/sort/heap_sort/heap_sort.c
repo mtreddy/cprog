@@ -10,7 +10,7 @@
  *     1. Call buildMaxHeap() function on the list also referred as heapify(), this builds a heap from a list in O(n) operations.
  */
 #include<stdio.h>
-#include "sort_common.h"
+#include "../sort_common.h"
 int array[500];
 int heap_size = 0;
 /*
