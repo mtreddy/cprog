@@ -12,7 +12,7 @@ int list_add_node(struct node **root, int val)
 {
     struct node *tmp;
     if(*root == NULL) {
-        *root = (struct node *)malloc(sizeof(node));
+        *root = (struct node *)malloc(sizeof(struct node));
         (*root)->val = val;
         (*root)->next = NULL;
         return 0;
@@ -23,7 +23,7 @@ int list_add_node(struct node **root, int val)
         tmp = tmp->next;
     }
     if(!tmp->next) {
-        tmp->next = (struct node *)malloc(sizeof(node));
+        tmp->next = (struct node *)malloc(sizeof(struct node));
         tmp->next->val = val;
         tmp->next->next = NULL;
         return 0;
@@ -34,7 +34,7 @@ int list_add_node(struct node **root, int val)
 int list_push_node(struct node **root, int val)
 {
     struct node *temp;
-    temp = (struct node *)malloc(sizeof(node));
+    temp = (struct node *)malloc(sizeof(struct node));
     temp->val = val;
     temp->next = (*root);
     (*root) = temp;
@@ -57,7 +57,7 @@ void list_print(struct node *root)
     struct node *tmp = NULL;
     tmp = root;
     printf("Printing list....\n");
-    while(tmp) {
+    while(tmp->next) {
         printf("val=%d\n",tmp->val);
         tmp = tmp->next;
     }
