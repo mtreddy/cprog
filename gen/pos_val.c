@@ -1,3 +1,7 @@
+/*
+ * Copyright 2024
+ *
+ */
 #include<stdio.h>
 
 #define pos_val(x) x<0?(-x):x
