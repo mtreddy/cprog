@@ -1,3 +1,6 @@
+/*
+ * Copy right 2024
+ */
 #include <stdio.h>
 #include <string.h>
 
