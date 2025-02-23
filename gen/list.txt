@@ -1,0 +1,16 @@
+1. Writea program to find size of int, flaot , double and char.
+2. Write a program to swap two variables
+3. Write a program to find largest number in 3 numbers
+4. write a program to convert binary to decimal
+5. FInda max and min of array
+6. Sum of natural numbers using recursion
+7. Reverse an array
+8. Rotate array to left
+9. Remove duplicates from sorted array
+10. Reverse linked list 
+11. Concatenate two string
+12. Is string palindrome
+13. reverse a string using recursion
+14. Insertion sort, Quick sort, merge sorty, selection sorty, radix sort, 
+15. Sort array of strings
+16. 
