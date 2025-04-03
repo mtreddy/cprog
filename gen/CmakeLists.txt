@@ -1,0 +1,3 @@
+project(CLI)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -g3")
+add_executable(cli cli_loop.c)
