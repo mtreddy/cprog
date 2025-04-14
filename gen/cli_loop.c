@@ -19,7 +19,7 @@ void parse_args(char *iargs, char **oargs, int *nargs){
                 /*Add end of str charecter*/
                 oargs[ind][strlen(ch)] = '\0';
                 /*Convert to lower case*/
-                for(int lind=0; lind < strlen(oargs[ind]); lind++)
+                for(int lind=0; lind < strlen(oargs[ind]); lind++) 
                         { oargs[ind][lind] = tolower(oargs[ind][lind]);}
                 printf("%s\n", ch);
                 ind++;
@@ -28,18 +28,77 @@ void parse_args(char *iargs, char **oargs, int *nargs){
         printf("Number of tokens.. %d\n", ind);
         *nargs = ind;
 }
-int run(int nargs, char** args) {
-        for(int ind = 0; ind < nargs; ind++) {
-                printf("run %s\n", args[ind]);
-                if(strncmp(args[ind], "exit", sizeof("exit")-1) == 0) {
-                        return 1;
-                }
-        }
+struct cmd{
+        const char *name;
+        int(*f)(int argc, char** argv);
+
+};
+int help(int argc, char** argv) {
+        printf("help called\n");
         return 0;
+}
+int app_init(int argc, char** argv) {
+        printf("Init called\n");
+        return 0;
+}
+int app_login(int argc, char** argv) {
+        printf("login called\n");
+        return 0;
+}
+int app_logout(int argc, char** argv) {
+        printf("Logout called\n");
+        return 0;
+}
+int app_reset(int argc, char** argv) {
+        printf("Reset called\n");
+        return 0;
+}
+int app_exit(int argc, char** argv) {
+        printf("Exit called\n");
+        return 1;
+}
+static const struct cmd s_cmds[] = {
+        { "help",        help },
+        { "init",        app_init },
+        { "login",       app_login },
+        { "logout",      app_logout },
+        { "reset",       app_reset },
+        { "exit",       app_exit},
+#if 0
+        { "remove-key",  remove_key },
+        { "list",        hsm_list },
+        { "rand",        get_rand },
+        { "derive",      derive_key },
+        { "get-pubkey",  get_pubkey },
+        { "get-prikey",  get_prikey },
+        { "import",      import_key },
+        { "sign",        sign },
+        { "verify",      verify },
+        { "digest",      digest },
+        { "hmac-digest", sign },
+        { "hkdf",        hkdf },
+        { "encrypt",     encrypt },
+        { "decrypt",     decrypt },
+        { "write",       write_data },
+        { "read",        read_data },
+        { "remove",      remove_data },
+        { "fmc",         fmc_feature },
+        { "gpio",        fmc_gpio },
+#endif
+        { NULL,       NULL}
+};
+int run(int nargs, char** argv) {
+        struct cmd *p = s_cmds;
+        int ret = 0;
+        for(;p->name && strncmp(p->name, argv[0], strlen(p->name)); ++p);
+        if(p->name) {
+                ret = p->f(nargs, argv);
+        }
+        return ret;
 }
 int main(int argc, char **argv) {
 
-        char arguments[MAX_PARAMS][PARAM_LENGTH];
+        char arguments[MAX_PARAMS][PARAM_LENGTH]; 
         char *shell_argv[MAX_PARAMS];
         if (argc >1 ) {
                 printf("More args\n");
@@ -55,7 +114,7 @@ int main(int argc, char **argv) {
 
 
         do {
-                printf("[HSM] ");
+               printf("[HSM] ");
                 size_t input = getline(&buff, &size_alloc, stdin);
                 printf(" %s\n", buff);
                 printf("%lu\n", input);
